@@ -1,32 +1,100 @@
 <!DOCTYPE html>
 <html>
-  
 <head>
-    <title> Activity4 </title>    
+<title> Welcome! </title>    
 </head>
-  
+    
 <style>
-   body{
-     background-image: 
-  }
+    body {
+        background-image: url(etona.jpg);
+        background-repeat: round;
+        font-family: sans-serif;
+
+        }
+    
+    .background {
+        padding: 40px;
+        width: 450px;
+        height: 480px;
+        text-align: center;
+        top: 45%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        opacity: 70%;
+        box-shadow: 15px 15px 60px #000;
+        border-top: 1px solid;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+        border-left: 1px solid;
+    }
+    
+    .h1 {
+        margin: 0;
+        padding: 0;
+        font-weight: bolder;
+        font-size: 50px;
+        font-family: cursive;
+    }
+         
+    .background input[type=text], .background input[type=password] {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        background: inherit;
+    } 
+    .background input[type=text]:hover, .background input[type=password]:hover{
+        background: #FAF0DC;
+        border: none;
+        border-left: 1px solid;
+        border-top: 1px solid;
+        
+    }
+    .user, .pass{
+        font-size: 20px;
+        font-weight: 100;
+        font-family: cursive;
+    }
+    .background button[type=submit],  .background button[type=reset] {
+        border: 1px solid;
+        outline: none;
+        background-color: #FAF0DC;
+        width: 80px;
+        height: 50;
+
+        cursor: pointer;
+        font-size: 20px;
+        font-family: cursive;
+    }
+    .background button[type=submit]:hover,  .background button[type=reset]:hover{
+        background: inherit;
+        color: solid black;
+        
+    }
+
 </style>
-    
+
 <body>
-  <h1> Milktealicious Coming Soon!</h1>
-  <p> Please fill out the form below for advance order and receive amazing discounts.</p>
-  <p> This is for limited time only. Thankyou! </p>
-  <br><br><br>
-  
-     <h1 class="user"> FirstName </h1><input type="text" placeholder="Enter your first name" required> 
-     <h1 class="pass"> LastName </h1> <input type="text" placeholder="Enter your last name" required>
-  
-  <br><br>
-    <button type="submit" a href="#">Submit for discount request</button>
-    <button type="reset" class="cancelbtn">Reset</button>
-  <br><br>
-    <button a href="#">Click here to order</a></button>
+<form method="get" action="fp.php">
     
+<div class="background">
+    
+    <h1 class="h1"> Get Started </h1><br>
+    <h1 class="user"> Username: </h1><input type="text" placeholder="Enter Username" name="uname" required> 
+    <h1 class="pass"> Password: </h1> <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <br><br><br>
 
+    <button type="submit">Login</button>
+    <button type="reset" class="cancelbtn">Cancel</button>
+    
+</div>
+<div id="overlay"></div>
+    
+</form>    
 </body>
-
+    
 </html>
