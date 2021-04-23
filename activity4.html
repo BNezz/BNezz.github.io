@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> My Business </title>    
+<title> Welcome! </title>    
 </head>
     
 <style>
     body {
-        background-image: url(kopi.jpg);
+        background-image: url(coffee.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         font-family: sans-serif;
 
         }
     
     .background {
-        padding: 40px;
+        padding: 25px;
         width: 450px;
-        height: 500px;
+        height: 550px;
         text-align: center;
-        top: 35%;
+        top: 45%;
         left: 50%;
         position: absolute;
         transform: translate(-50%,-50%);
@@ -37,10 +38,19 @@
         font-size: 30px;
         font-family: cursive;
     }
-    .sub {
+     .sub {
         margin: 0;
-        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 0;
         font-size: 15px;
+        font-family: cursive;
+    }
+    
+     .user, .pass{
+        padding-top: 0;
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 100;
         font-family: cursive;
     }
          
@@ -59,37 +69,39 @@
         border-top: 1px solid;
         
     }
-    .user, .pass{
-        font-size: 20px;
-        font-weight: 100;
-        font-family: cursive;
-    }
-    .background button[type=submit],  .background button[type=reset] {
-        border: 1px solid;
-        outline: none;
+   
+    a:link,  .a:visited {
         background-color: #FAF0DC;
-        width: 80px;
-        height: 50;
-
+        text-decoration: none;
+        border: none;
+        border-right: 1px solid;
+        border-bottom: 1px solid;
+        width: 150px;
+        height: 35;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 18px;
         font-family: cursive;
+        display: inline-block;
     }
-    .background button[type=submit]:hover,  .background button[type=reset]:hover {
-        background: inherit;
-        color: solid black;
-        
+    a:hover{
+        background-color: inherit;
+        text-decoration: none;
+        width: 150px;
+        height: 35;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: cursive;
+        display: inline-block;
     }
 
 </style>
 
 <body>
-<form method="get" action="fp.php">
     
 <div class="background">
     
-    <h1 class="h1"> Coffecious Coming Soon! </h1>
-    <p class="sub"> Please fill out the form below for advance order and receive amazing discounts.</p>
+   <h1 class="h1"> Cofficious Coming Soon! </h1>
+    <p class="sub"> Please fill out the form below to receive amazing discounts.</p>
     <p> This is for limited time only. Thankyou! </p>
   <br><br><br>
     
@@ -98,15 +110,15 @@
     
     <br><br><br>
 
-    <button type="submit">Submit to claim discounts</button>
-    <button type="reset" class="cancelbtn">Clear</button>
+    <a href="#">Submit now</a>    
     <br><br>
-    <button type="submit">Click here for advance order</button>
+    <a href="#">Homepage</a>
+    <a href="#">Go to Favorites</a>
     
 </div>
 <div id="overlay"></div>
     
-</form>    
+   
 </body>
     
 </html>
